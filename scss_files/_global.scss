@@ -96,3 +96,12 @@ span {
     align-items: $align-items;
     text-align: $text-align;
 }
+
+@media (min-width: 100px) and (max-width: 1234px) {
+    html,
+    body {
+        font-family: 'Vazir', sans-serif;
+        font-size: 40%;
+        line-height: 30px;
+    }
+}

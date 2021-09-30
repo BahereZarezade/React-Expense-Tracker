@@ -97,6 +97,15 @@ span {
   padding: 1rem 0.5rem;
 }
 
+@media (min-width: 100px) and (max-width: 1234px) {
+  html,
+  body {
+    font-family: 'Vazir', sans-serif;
+    font-size: 40%;
+    line-height: 30px;
+  }
+}
+
 .App {
   text-align: center;
 }

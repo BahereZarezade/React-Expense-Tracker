@@ -36,3 +36,18 @@
         }
     }
 }
+
+@media (min-width: 100px) and (max-width: 1234px) {
+    .container {
+        .expense-item {
+            @include flex(column, center, center, center);
+            flex-wrap: wrap;
+            .date {
+                @include flex(column, space-between, center, center);
+            }
+            .expense-item__description {
+                @include flex(column, space-between, center, center);
+            }
+        }
+    }
+}
