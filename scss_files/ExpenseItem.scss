@@ -1,0 +1,38 @@
+@import 'font&variables';
+@import 'global';
+
+.container {
+    padding: 2rem;
+    .expense-item {
+        @include flex(row-reverse, space-between, center, center);
+        padding: 0.5rem 2rem;
+        font-size: 2rem;
+        border: 2px solid rgb(41, 41, 41);
+        border-radius: 10px;
+        background: rgb(155, 155, 155);
+        color: #fff;
+        .date {
+            @include flex(row-reverse, space-between, center, center);
+            padding: 1rem 2rem;
+            text-shadow: $text-shadow1;
+            h2 {
+                color: rgb(13, 36, 165);
+                padding: 1rem 2rem;
+            }
+        }
+        .expense-item__description {
+            padding: 1rem 2rem;
+            @include flex(row-reverse, space-between, center, center);
+            h3 {
+                padding: 1rem 2rem;
+            }
+        }
+        .expense-item__price {
+            padding: 1rem 2rem;
+            text-shadow: $text-shadow1;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            background: rgb(13, 36, 165);
+        }
+    }
+}

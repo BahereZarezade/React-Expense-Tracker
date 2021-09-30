@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Vazir', sans-serif;
+  font-size: 62.5%;
+  line-height: 45px;
+  direction: rtl;
+  text-align: right;
+  /* حذف اسکرول افقی */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #383838;
+}
+
+/* Utility Classes */
+a {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #12ecec;
+  font-size: 266%;
+  text-shadow: 2px 1px 2px #000;
+  z-index: 3;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #12ecec;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  z-index: 10;
+  text-shadow: 2px 1px 2px #000;
+  padding: 1rem 1rem;
+}
+
+li,
+label,
+input,
+p {
+  z-index: 3;
+  text-shadow: 2px 1px 2px #000;
+  font-weight: normal;
+}
+
+button {
+  font-weight: bold;
+  z-index: 3;
+  border: none;
+  background: #12ecec;
+  color: #fff;
+  flex: 1 1 auto;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  animation: buttonAnimation 1.5s infinite alternate 1.5s;
+  animation-iteration-count: 3;
+}
+
+button:hover {
+  background: #00c4c4;
+}
+
+button:focus {
+  background: darkcyan;
+  outline-style: solid;
+  outline-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  z-index: 3;
+  text-shadow: 2px 1px 2px #000;
+  padding: 0.5rem 1rem;
+}
+
+span {
+  color: #12ecec;
+  padding: 1rem 0.5rem;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.container .expense-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border: 2px solid #292929;
+  border-radius: 10px;
+  background: #9b9b9b;
+  color: #fff;
+}
+
+.container .expense-item .date {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  text-shadow: 2px 1px 2px #000;
+}
+
+.container .expense-item .date h2 {
+  color: #0d24a5;
+  padding: 1rem 2rem;
+}
+
+.container .expense-item .expense-item__description {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.container .expense-item .expense-item__description h3 {
+  padding: 1rem 2rem;
+}
+
+.container .expense-item .expense-item__price {
+  padding: 1rem 2rem;
+  text-shadow: 2px 1px 2px #000;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background: #0d24a5;
+}
+/*# sourceMappingURL=ExpenseItem.css.map */

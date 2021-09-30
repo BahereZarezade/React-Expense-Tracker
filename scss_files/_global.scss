@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Vazir', sans-serif;
+    font-size: 62.5%;
+    line-height: 45px;
+    direction: rtl;
+    text-align: right;
+    /* حذف اسکرول افقی */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgb(56, 56, 56);
+}
+
+/* Utility Classes */
+a {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: $primary-color1;
+    font-size: 266%;
+    text-shadow: $text-shadow1;
+    z-index: 3;
+    font-weight: bold;
+    &:hover {
+        color: $primary-color1;
+    }
+}
+
+.container {
+    width: 90vw;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    z-index: 10;
+    text-shadow: $text-shadow1;
+    padding: 1rem 1rem;
+}
+li,
+label,
+input,
+p {
+    z-index: 3;
+    text-shadow: $text-shadow1;
+    font-weight: normal;
+}
+button {
+    font-weight: bold;
+    z-index: 3;
+    border: none;
+    background: $primary-color1;
+    color: #fff;
+    flex: 1 1 auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: buttonAnimation 1.5s infinite alternate 1.5s;
+    animation-iteration-count: 3;
+    &:hover {
+        background: $primary-color2;
+    }
+    &:focus {
+        background: $primary-color3;
+        outline-style: solid;
+        outline-color: $primary-color4;
+    }
+}
+
+ul {
+    list-style: none;
+}
+li {
+    list-style: none;
+    z-index: 3;
+    text-shadow: $text-shadow1;
+    padding: 0.5rem 1rem;
+}
+span {
+    color: $primary-color1;
+    padding: 1rem 0.5rem;
+}
+
+//mixin include
+@mixin flex($direction, $justify, $align-items, $text-align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+    text-align: $text-align;
+}
