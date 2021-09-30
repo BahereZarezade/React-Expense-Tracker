@@ -134,8 +134,14 @@ span {
   text-shadow: 2px 1px 2px #000;
 }
 
-.container .expense-item .date h2 {
-  color: #0d24a5;
+.container .expense-item .date h2.date {
+  color: #000;
+  padding: 1rem 2rem;
+  text-shadow: none;
+}
+
+.container .expense-item .date h2.title {
+  color: #fff;
   padding: 1rem 2rem;
 }
 

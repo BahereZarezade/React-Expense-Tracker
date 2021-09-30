@@ -5,8 +5,8 @@ function ExpenseItem(props) {
     <div className="container">
     <div className="expense-item">
       
-       <div className="date"><h2>{props.date.toISOString()}</h2>
-       <h2>{props.title}</h2>
+       <div className="date"><h2 className="date">{props.date.toISOString()}</h2>
+       <h2 className="tilte">{props.title}</h2>
        </div>
 
         <div className="expense-item__description">   

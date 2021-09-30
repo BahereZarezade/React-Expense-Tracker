@@ -15,8 +15,13 @@
             @include flex(row-reverse, space-between, center, center);
             padding: 1rem 2rem;
             text-shadow: $text-shadow1;
-            h2 {
-                color: rgb(13, 36, 165);
+            h2.date {
+                color: #000;
+                padding: 1rem 2rem;
+                text-shadow: none;
+            }
+            h2.title {
+                color: #fff;
                 padding: 1rem 2rem;
             }
         }
