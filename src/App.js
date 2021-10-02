@@ -3,6 +3,7 @@ import ExpenseItem from './components/ExpenseItem';
 import './components/App.css';
 
 function App(){
+  //const for ExpenseItem component
   const expenses=[
   {id: "e1", title: "بیمه ماشین", amount: 294.67, date: new Date(2021, 2, 28)},
   {id: "e2", title: "دستمال", amount: 300.210, date: new Date(2021, 3, 28)},
