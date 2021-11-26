@@ -1,14 +1,16 @@
-export default function ExpenseDate(props){
+import './ExpenseDate.css'
+
+export default function ExpenseDate(props) {
   //const for date
-  const month = props.date.toLocaleString('en-US', {month: 'long'});
-  const year = props.date.toLocaleString('en-US', {day: '2-digit'});
+  const month = props.date.toLocaleString('en-US', { month: 'long' });
+  const year = props.date.toLocaleString('en-US', { day: '2-digit' });
   const day = props.date.getFullYear();
 
-  return(
-    <div className="date">
-        <div>{day}</div>
-        <div>{month} /</div>
-        <div>{year} /</div>
+  return (
+    <div className="expense-date">
+      <div className="expense-date__month">{month} / </div>
+      <div className="expense-date__year">{year} / </div>
+      <div className="expense-date__day"> {day}</div>
     </div>
   );
 }

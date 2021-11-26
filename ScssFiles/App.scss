@@ -45,3 +45,6 @@ h1.Title {
   color: #fff;
   word-spacing: 20px;
 }
+.container.main {
+  @include flex(row, center, center, center);
+}

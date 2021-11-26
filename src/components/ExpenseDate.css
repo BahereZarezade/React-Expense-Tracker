@@ -105,4 +105,19 @@ span {
     line-height: 30px;
   }
 }
-/*# sourceMappingURL=ExpenseDate.css.map */
+
+.expense-date {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.expense-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}

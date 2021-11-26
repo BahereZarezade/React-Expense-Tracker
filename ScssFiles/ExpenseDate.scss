@@ -1,2 +1,9 @@
 @import 'FontVariables';
 @import 'Global';
+
+.expense-date {
+    @include flex(row-reverse, space-between, center, center);
+}
+.expense-date {
+    @include flex(row, space-between, center, center);
+}

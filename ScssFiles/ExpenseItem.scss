@@ -7,19 +7,10 @@
         @include flex(row-reverse, space-between, center, center);
         padding: 0.5rem 2rem;
         font-size: 2rem;
-        border: 2px solid rgb(41, 41, 41);
-        border-radius: 10px;
-        background: rgb(155, 155, 155);
+        background: #0982ff;
         color: #fff;
-        .date {
-            @include flex(row-reverse, space-between, center, center);
-            padding: 1rem 2rem;
-            text-shadow: $text-shadow1;
-            color: #000;
-            padding: 1rem 2rem;
-            text-shadow: none;
-            font-weight: bold;
-        }
+        margin: 2rem 2rem;
+        width: 67vw;
         .expense-item__description {
             padding: 1rem 2rem;
             @include flex(row-reverse, space-between, center, center);
@@ -42,9 +33,6 @@
         .expense-item {
             @include flex(column, center, center, center);
             flex-wrap: wrap;
-            .date {
-                @include flex(column, space-between, center, center);
-            }
             .expense-item__description {
                 @include flex(column, space-between, center, center);
             }
